@@ -10,21 +10,10 @@ James, id: 2, in Columbia
 Serena, id: 5, in San Francisco
 */
 
-export function getListStudents() {
-  const student1 = {
-    id: 1,
-    firstName: 'Guillaume',
-    location: 'San Francisco'
-  };
-  const student2 = {
-    id: 2,
-    firstName: 'James',
-    location: 'Columbia'
-  };
-  const student3 = {
-    id: 5,
-    firstName: 'Serena',
-    location: 'San Francisco'
-  };
-  return [student1, student2, student3];
+export default function getListStudents() {
+  const studentOne = { id: 1, firstName: 'Guillaume', location: 'San Francisco' };
+  const studentTwo = { id: 2, firstName: 'James', location: 'Columbia' };
+  const studentThree = { id: 5, firstName: 'Serena', location: 'San Francisco' };
+
+  return new Array(studentOne, studentTwo, studentThree);
 }
