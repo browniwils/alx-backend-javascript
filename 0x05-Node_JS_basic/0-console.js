@@ -4,9 +4,11 @@
 
 /**
  * Log message on stdout
- * @param {*} message 
+ * @param {*} message
  */
 
-export function displayMessage(message) {
+const displayMessage = (message) => {
   console.log(message);
 }
+
+export default displayMessage;

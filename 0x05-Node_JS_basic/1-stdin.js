@@ -9,16 +9,16 @@
  * Displaying of information and ask for input.
  */
 function run() {
-  process.stdout.write(`Welcome to Holberton School, what is your name?\n`)
+  process.stdout.write('Welcome to Holberton School, what is your name?\n');
   process.stdin.on('readable', () => {
     const commandLineInput = process.stdin.read();
     if (commandLineInput) {
-        process.stdout.write(`Your name is: ${commandLineInput}`);
+      process.stdout.write(`Your name is: ${commandLineInput}`);
     }
-  })
+  });
   process.stdin.on('end', () => {
-    process.stdout.write(`This important software is now closing\n`)
-  })
+    process.stdout.write('This important software is now closing\n');
+  });
 }
 
-run()
+run();

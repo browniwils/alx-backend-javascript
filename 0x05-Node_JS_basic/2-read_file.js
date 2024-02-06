@@ -2,8 +2,7 @@
 
 const fs = require('fs');
 
-
-export const countStudents = (filePath) => {
+const countStudents = (filePath) => {
   if (!fs.existsSync(filePath)) {
     throw new Error('Cannot load the database');
   }
@@ -40,6 +39,8 @@ export const countStudents = (filePath) => {
   for (const [field, group] of Object.entries(stGroups)) {
     const studentNames = group.map((student) => student.firstname).join(', ');
     console
-    .log(`Number of students in ${field}: ${group.length}. List: ${studentNames}`);
+      .log(`Number of students in ${field}: ${group.length}. List: ${studentNames}`);
   }
 };
+
+export default countStudents;

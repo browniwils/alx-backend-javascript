@@ -9,7 +9,6 @@ export const app = http.createServer();
 
 app.on('request', (req, res) => {
   const customRes = 'Hello Holberton School!';
-
   res.setHeader('Content-Type', 'text/plain');
   res.setHeader('Content-Length', customRes.length);
   res.statusCode = 200;

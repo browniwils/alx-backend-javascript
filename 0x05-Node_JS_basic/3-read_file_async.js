@@ -2,7 +2,7 @@
 
 const fs = require('fs');
 
-export const countStudents = (filePath) => new Promise((resolve, reject) => {
+const countStudents = (filePath) => new Promise((resolve, reject) => {
   fs.readFile(filePath, 'utf-8', (err, data) => {
     if (err) {
       reject(new Error('Cannot load the database'));
@@ -42,3 +42,5 @@ export const countStudents = (filePath) => new Promise((resolve, reject) => {
     }
   });
 });
+
+export default countStudents;

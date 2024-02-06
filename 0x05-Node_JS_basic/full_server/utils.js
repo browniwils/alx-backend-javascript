@@ -2,7 +2,6 @@
 
 import fs from 'fs';
 
-
 const readDatabase = (filePath) => new Promise((resolve, reject) => {
   if (!filePath) {
     reject(new Error('Cannot load the database'));
