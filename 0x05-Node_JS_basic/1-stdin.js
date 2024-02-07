@@ -3,7 +3,7 @@
 // Script display the message Welcome to Holberton School,
 // what is your name and  users input their name on a new line
 // When the user ends the program, it should display
-//This important software is now closing
+// This important software is now closing
 
 /**
  * Displaying of information and ask for input.

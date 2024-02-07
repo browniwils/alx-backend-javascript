@@ -8,7 +8,6 @@ const HOST = 'localhost';
 const app = http.createServer();
 const DB_FILE = process.argv.length > 2 ? process.argv[2] : '';
 
-
 const countStudents = (filePath) => new Promise((resolve, reject) => {
   if (!filePath) {
     reject(new Error('Cannot load the database'));
@@ -112,3 +111,5 @@ app.on('request', (req, res) => {
 app.listen(PORT, HOST, () => {
   process.stdout.write(`Server listening at -> http://${HOST}:${PORT}\n`);
 });
+
+export default app;

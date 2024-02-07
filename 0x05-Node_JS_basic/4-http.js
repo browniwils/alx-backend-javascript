@@ -5,7 +5,7 @@ const http = require('http');
 const PORT = 1245;
 const HOST = 'localhost';
 
-export const app = http.createServer();
+const app = http.createServer();
 
 app.on('request', (req, res) => {
   const customRes = 'Hello Holberton School!';
@@ -18,3 +18,5 @@ app.on('request', (req, res) => {
 app.listen(PORT, HOST, () => {
   process.stdout.write(`Server listening at -> http://${HOST}:${PORT}\n`);
 });
+
+export default app;

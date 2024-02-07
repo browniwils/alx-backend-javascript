@@ -7,7 +7,7 @@ const app = express();
 const PORT = 1245;
 const DB_FILE = process.argv.length > 2 ? process.argv[2] : '';
 
-export const countStudents = (filePath) => new Promise((resolve, reject) => {
+const countStudents = (filePath) => new Promise((resolve, reject) => {
   if (!filePath) {
     reject(new Error('Cannot load the database'));
   }
@@ -89,3 +89,5 @@ app.get('/students', (req, res) => {
 app.listen(PORT, () => {
   console.log(`Server listening on PORT ${PORT}`);
 });
+
+export default countStudents;
