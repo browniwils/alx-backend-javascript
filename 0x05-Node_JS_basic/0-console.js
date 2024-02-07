@@ -12,4 +12,4 @@ const displayMessage = (message) => {
 };
 
 export default displayMessage;
-module.exports = displayMessage
+module.exports = displayMessage;
