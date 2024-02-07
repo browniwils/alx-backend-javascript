@@ -113,3 +113,4 @@ app.listen(PORT, HOST, () => {
 });
 
 export default app;
+module.exports = app;

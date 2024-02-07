@@ -14,3 +14,4 @@ app.listen(PORT, () => {
 });
 
 export default app;
+module.exports = app;

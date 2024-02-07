@@ -44,3 +44,4 @@ const countStudents = (filePath) => new Promise((resolve, reject) => {
 });
 
 export default countStudents;
+module.exports = countStudents;

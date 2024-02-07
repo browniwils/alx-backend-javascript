@@ -91,3 +91,4 @@ app.listen(PORT, () => {
 });
 
 export default countStudents;
+module.exports = countStudents;
