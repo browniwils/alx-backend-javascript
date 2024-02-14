@@ -1,4 +1,4 @@
-export const calculateNumber = (a, b) => {
+const calculateNumber = (a, b) => {
     results = Math.round(a) + Math.round(b)
     return results;
 }
