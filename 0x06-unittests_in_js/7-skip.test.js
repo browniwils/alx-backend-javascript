@@ -5,8 +5,8 @@ describe('Testing numbers', () => {
         expect(20 === 20).to.be.true;
     });
 
-  it.skip('11 is equal to 41', () => {
-    expect(11 === 41).to.be.true;
+  it.skip('1 is equal to 3', () => {
+    expect(1 === 3).to.be.true;
   });
 
     it('11 is equal to 11', () => {
