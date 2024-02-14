@@ -90,4 +90,4 @@ app.listen(PORT, () => {
   console.log(`Server listening on PORT ${PORT}`);
 });
 
-module.exports = countStudents;
+module.exports = app;
