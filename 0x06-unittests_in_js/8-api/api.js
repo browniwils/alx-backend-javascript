@@ -1,7 +1,7 @@
 const express = require('express');
 
 const PORT = 7865;
-export const app = express();
+const app = express();
 
 app.get('/', (_, res) => {
   res.send('Welcome to the payment system');

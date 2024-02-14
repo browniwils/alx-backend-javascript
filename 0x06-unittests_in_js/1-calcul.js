@@ -1,4 +1,4 @@
-export const calculateNumber = (type, a, b) => {
+const calculateNumber = (type, a, b) => {
   switch (type) {
     case 'SUM':
       return Math.round(a) + Math.round(b);

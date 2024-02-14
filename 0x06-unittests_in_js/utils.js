@@ -1,4 +1,4 @@
-export const Utils = {
+const Utils = {
   calculateNumber(type, a, b) {
     switch (type) {
       case 'SUM':
