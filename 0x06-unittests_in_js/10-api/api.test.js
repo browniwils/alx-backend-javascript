@@ -3,7 +3,6 @@ const { expect } = require('chai');
 
 describe('API integration test', () => {
   const URL = 'http://localhost:7865';
-  const userName = 'browniwils'
 
   it('GET / returns correct response', (done) => {
     request.get(`${URL}/`, (_, res, body) => {
@@ -36,9 +35,9 @@ describe('API integration test', () => {
   });
 
   it('POST /login returns valid response', (done) => {
-    request.post(`${URL}/login`, {json: {userName: userName}}, (_, res, body) => {
+    request.post(`${URL}/login`, {json: {userName: 'Pinkbrook'}}, (_, res, body) => {
       expect(res.statusCode).to.be.equal(200);
-      expect(body).to.be.equal(`Welcome ${userName}`);
+      expect(body).to.be.equal(`Welcome ${'Pinkbrook'}`);
       done();
     });
   });
