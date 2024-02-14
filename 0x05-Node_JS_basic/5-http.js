@@ -112,5 +112,4 @@ app.listen(PORT, HOST, () => {
   process.stdout.write(`Server listening at -> http://${HOST}:${PORT}\n`);
 });
 
-export default app;
 module.exports = app;

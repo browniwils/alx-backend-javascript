@@ -10,5 +10,4 @@ const mapRoutes = (app) => {
   app.get('/students/:major', StudentsController.getAllStudentsByMajor);
 };
 
-export default mapRoutes;
 module.exports = mapRoutes
