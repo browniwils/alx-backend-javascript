@@ -43,5 +43,4 @@ const countStudents = (filePath) => {
   }
 };
 
-export default countStudents;
 module.exports = countStudents;
