@@ -1,6 +1,7 @@
 #!/usr/bin/node
 
-import { readDatabase } from '../utils';
+// import { readDatabase } from '../utils';
+const readDatabase = require('../utils');
 
 const VALID_MAJORS = ['CS', 'SWE'];
 
